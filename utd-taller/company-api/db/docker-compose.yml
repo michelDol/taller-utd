@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  postgres-utd:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_USER : postgres
+      POSTGRES_PASSWORD : admin1234
+      POSTGRES_DB: company
+    networks:
+      - postgres_net
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    external: true
+
+networks:
+  postgres_net:
+    external: true
+

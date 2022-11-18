@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+
+  company:
+    image: utd/taller/company-api:0.0.1-SNAPSHOT
+    restart: always
+    ports:
+      - 8088:8088
+    mem_limit: 700m
+    mem_reservation: 512m
+    networks:
+      - mongo_net
+
+  employee:
+    image: utd/taller/utd-taller:0.0.1-SNAPSHOT
+    restart: always
+    ports:
+      - 9091:9091
+    mem_limit: 700m
+    mem_reservation: 512m
+    networks:
+      - mongo_net
+
+
+
+networks:
+  mongo_net:
+    external: true
+

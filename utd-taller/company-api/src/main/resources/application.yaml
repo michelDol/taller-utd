@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: company
+    admin:
+      enabled: true
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+  datasource:
+    url: jdbc:postgresql://192.168.1.8:5432/company
+    username: postgres
+    password: admin1234
+    driver-class-name: org.postgresql.Driver
+
+server:
+  compression:
+    enabled: true
+  port: 8088

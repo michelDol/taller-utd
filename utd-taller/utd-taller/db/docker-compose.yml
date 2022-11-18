@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  bhit-mongo:
+    image: mongo:5.0.12
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: utd-taller
+      MONGO_INITDB_ROOT_PASSWORD: admin1234
+      MONGO_INITDB_DATABASE: empleado
+    mem_reservation: 1200m
+    networks:
+      - mongo_net
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
+    external: true
+
+networks:
+  mongo_net:
+    external: true
+

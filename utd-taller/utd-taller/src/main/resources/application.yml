@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: empleado
+    admin:
+      enabled: true
+  data:
+    mongodb:
+      database: empleado
+      host: 192.168.1.8
+      port: 27017
+      repositories:
+        type: auto
+      username: utd-taller
+      password: admin1234
+
+server:
+  compression:
+    enabled: true
+  port: 9091
+
+
+
+
+
+api:
+  url: "http://192.168.1.8:8088/company/name/"
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/utd-taller/company-api/company-api.iml" filepath="$PROJECT_DIR$/utd-taller/company-api/company-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ejemplo.iml" filepath="$PROJECT_DIR$/.idea/ejemplo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utd-taller/utd-taller/utd-taller.iml" filepath="$PROJECT_DIR$/utd-taller/utd-taller/utd-taller.iml" />
+    </modules>
+  </component>
+</project>
